@@ -5,8 +5,8 @@ function Home(){
             <div className={styles.background}>
                 <div className={styles.logo}/>
                 <h1>
-                    <span className=''>Frete</span> 
-                    <span>Grátis</span> 
+                    <span>Frete </span> 
+                    <span>Grátis </span> 
                     Goiania e Região</h1>
             </div>
         </>
