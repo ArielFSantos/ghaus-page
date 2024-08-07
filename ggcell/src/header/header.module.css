@@ -37,11 +37,11 @@ a::after{
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #53d06f;
+    background: #cf945b;
     transition: width 0.3s ease, right 0.3s ease;
 }
 a:hover{
-    color: #53d06f;
+    color: #cf945b;
 }
 a:hover::after{
     width: 100%;
@@ -51,8 +51,8 @@ a:hover::after{
 .logo{
     background-image: url(../assets/image/GG.png);
     background-size: cover;
-    width: 100px;
-    height: 65px;
+    width: 60px;
+    height: 40px;
 }
 
 

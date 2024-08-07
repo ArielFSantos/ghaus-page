@@ -8,16 +8,16 @@ function Header() {
         <nav className={styles.navBar}>
             <ul className={styles.navList}>
                 <li>
-                  <a href="#">Topico 1</a>
+                  <a href="#">Tela Inicial</a>
                 </li>
                 <li>
-                  <a href="#">Topico 2</a>
+                  <a href="#">Produtos</a>
                 </li>
                 <li>
-                  <a href="#">Topico 3</a>
+                  <a href="#">Comentarios</a>
                 </li>
                 <li>
-                  <a href="#">Topico 4</a>
+                  <a href="#">Contato</a>
                 </li>
             </ul>
         </nav>
