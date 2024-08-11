@@ -4,7 +4,7 @@ import logoImage from '../assets/image/GG.png';
 function Header() {
   return (
     <>
-      <span className="font-sans flex flex-row justify-around items-center bg-black text-white p-5">
+      <span className="h-full font-sans flex flex-row justify-around items-center bg-black text-white p-5">
         <a href="#" className="bg-cover bg-center w-16 h-14" style={{ backgroundImage: `url(${logoImage})` }} />
         <nav>
             <ul className="list-none flex justify-around w-[40vw]">

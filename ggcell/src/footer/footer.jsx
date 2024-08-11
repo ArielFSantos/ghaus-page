@@ -1,8 +1,11 @@
-import styles from './footer.module.css'
-
-function Footer(){
-    return(
-        <h1 className={styles.footer}>© Desenvolvido por Ariel Freitas</h1>
-    )
-}
-export default Footer;
+// footer.js
+function Footer() {
+    return (
+      <footer className="bg-black text-white text-sm font-sans p-4 text-center">
+        © Desenvolvido por Ariel Freitas
+      </footer>
+    );
+  }
+  
+  export default Footer;
+  
