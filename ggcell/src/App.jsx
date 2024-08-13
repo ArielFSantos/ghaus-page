@@ -1,11 +1,10 @@
-import Body from './body/body'
-
+import Home from "./body/Home/home";
 function App() {
   return (
     <>
       
 
-        <Body/>
+        <Home/>
        
       
     </>
