@@ -5,7 +5,7 @@ function Home() {
     return (
         <>
             <div
-                className="relative h-screen w-auto flex flex-col items-center justify-center mx-auto text-center"
+                className="  relative h-screen w-auto flex flex-col items-center justify-center mx-auto text-center"
                 style={{
                     backgroundImage: `url(${bgHome}), radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 80%)`,
                     backgroundSize: 'cover',
