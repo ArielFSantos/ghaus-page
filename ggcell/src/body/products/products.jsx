@@ -10,6 +10,7 @@ import samsung from '../../assets/image/samsung.png';
 import poco from '../../assets/image/poco.png';
 import motorola from '../../assets/image/motorola.png';
 
+
 function Products() {
   const settings = {
     dots: false, // Esconde os pontos de navegação
@@ -40,7 +41,8 @@ function Products() {
   return (
     <section className="bg-blue-950 h-screen w-full mx-auto">
       <div className="h-20"></div>
-      <div className="h-36 sm:h-40 my-10 w-full bg-gradient-to-b from-gray-700 to-gray-300 border-t-gray-950 ">
+      {/* Logo de Marcas */}
+      <div className="h-36 sm:h-40 my-10 w-full bg-gradient-to-b from-gray-100 to-gray-500 ">
         <div className="container mx-auto">
           <Slider {...settings}>
             <div className="flex justify-center items-center">
@@ -95,6 +97,20 @@ function Products() {
         </div>
       </div>
       <div className="h-20"></div>
+       {/* Card de Produtos */}
+      <aside>
+        <div className='container flex flex-wrap '>
+        <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+      <img className="w-full h-48 object-cover" src="https://via.placeholder.com/400" alt="Card image" />
+      <div className="p-6">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Card Title</h2>
+        <p className="text-gray-700 mb-4">This is a simple card component using Tailwind CSS.</p>
+        <a href="#" className="text-blue-500 hover:text-blue-700">Read More</a>
+      </div>
+    </div>
+        </div>
+
+      </aside>
     </section>
   );
 }
