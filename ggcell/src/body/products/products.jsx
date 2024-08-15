@@ -31,7 +31,7 @@ function Products() {
       {
         breakpoint: 600, // Quando a largura da tela for menor que 600px
         settings: {
-          slidesToShow: 3, // Mostrar 3 slides em dispositivos móveis
+          slidesToShow: 4, // Mostrar 3 slides em dispositivos móveis
           slidesToScroll: 1,
         },
       },
@@ -39,7 +39,7 @@ function Products() {
   };
 
   return (
-    <section className="bg-blue-950 h-screen w-full mx-auto">
+    <section className="bg-blue-950 h-auto sm:h-screen w-full mx-auto">
       <div className="h-20"></div>
       {/* Logo de Marcas */}
       <div className="h-36 sm:h-40 my-10 w-full bg-gradient-to-b from-gray-100 to-gray-500 ">
@@ -98,19 +98,37 @@ function Products() {
       </div>
       <div className="h-20"></div>
        {/* Card de Produtos */}
-      <aside>
-        <div className='container flex flex-wrap '>
-        <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
-      <img className="w-full h-48 object-cover" src="https://via.placeholder.com/400" alt="Card image" />
-      <div className="p-6">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">Card Title</h2>
-        <p className="text-gray-700 mb-4">This is a simple card component using Tailwind CSS.</p>
-        <a href="#" className="text-blue-500 hover:text-blue-700">Read More</a>
-      </div>
-    </div>
+   
+      <div className='mx-auto  flex flex-wrap  '>
+            <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+          <img className="w-full h-48 object-cover" src="https://via.placeholder.com/400" alt="Card image" />
+          <div className="p-6">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">Celulares</h2>
+            
+          </div>
         </div>
-
-      </aside>
+        <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+          <img className="w-full h-48 object-cover" src="https://via.placeholder.com/400" alt="Card image" />
+          <div className="p-6">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">Fones de Ouvido</h2>
+  
+          </div>
+        </div>
+        <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+          <img className="w-full h-48 object-cover" src="https://via.placeholder.com/400" alt="Card image" />
+          <div className="p-6">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">Relogios</h2>
+            
+          </div>
+        </div>
+        <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+          <img className="w-full h-48 object-cover" src="https://via.placeholder.com/400" alt="Card image" />
+          <div className="p-6">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">Peliculas</h2>
+           
+          </div>
+        </div>
+        </div>
     </section>
   );
 }
