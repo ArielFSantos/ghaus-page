@@ -72,7 +72,7 @@ function Products() {
           </Slider>
         </div>
       </div>
-      <h1 className='font-bold text-white mx-auto text-center text-3xl sm:text-5xl p-10' >Produtos</h1>
+      <h1 className='font-bold text-gray-200 mx-auto text-center text-3xl sm:text-5xl p-10' >Produtos</h1>
       {/* Card de Produtos */}
       <div className="mx-auto flex flex-wrap justify-center gap-6">
   {[

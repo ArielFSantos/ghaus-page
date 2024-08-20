@@ -40,12 +40,12 @@ function Header() {
         <nav className={`flex flex-col sm:flex-row items-center justify-between w-full ${menuOpen ? 'block' : 'hidden'} sm:block`}>
           <ul className="list-none flex flex-col sm:flex-row items-center justify-center w-full sm:w-auto">
             <li className="relative group">
-              <a href="#" className="text-white no-underline p-4 transition-colors duration-300 ease-in-out group-hover:text-[#cf945b]">
+              <a href="/" className="text-white no-underline p-4 transition-colors duration-300 ease-in-out group-hover:text-[#cf945b]">
                 Tela Inicial
               </a>
             </li>
             <li className="relative group">
-              <a href="#" className="text-white no-underline p-4 transition-colors duration-300 ease-in-out group-hover:text-[#cf945b]">
+              <a href="/products" className="text-white no-underline p-4 transition-colors duration-300 ease-in-out group-hover:text-[#cf945b]">
                 Produtos
               </a>
             </li>
