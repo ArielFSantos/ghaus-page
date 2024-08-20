@@ -44,53 +44,23 @@ function Products() {
       <div className="h-26 sm:h-32 my-10 w-full bg-gradient-to-b from-zinc-600 to-zinc-950">
         <div className="container mx-auto">
           <Slider {...settings}>
-            <div className="flex justify-center items-center h-28">
-              <div
-                style={{ backgroundImage: `url(${xiaomi})` }}
-                className="w-28 h-28 bg-contain bg-no-repeat bg-center"
-              >
-                {/* Logo Xiaomi */}
-              </div>
+            <div className="flex justify-center items-center h-32">
+              <img src={xiaomi} alt="Xiaomi Logo" className="h-28 w-auto object-contain" />
             </div>
             <div className="flex justify-center items-center h-28">
-              <div
-                style={{ backgroundImage: `url(${apple})` }}
-                className="w-28 h-28 bg-contain bg-no-repeat bg-center"
-              >
-                {/* Logo Apple */}
-              </div>
+              <img src={apple} alt="Apple Logo" className="h-28 w-auto object-contain" />
             </div>
             <div className="flex justify-center items-center h-28">
-              <div
-                style={{ backgroundImage: `url(${jbl})` }}
-                className="w-28 h-28 bg-contain bg-no-repeat bg-center"
-              >
-                {/* Logo JBL */}
-              </div>
+              <img src={jbl} alt="JBL Logo" className="h-24 w-auto object-contain" />
             </div>
             <div className="flex justify-center items-center h-28">
-              <div
-                style={{ backgroundImage: `url(${samsung})` }}
-                className="w-28 h-28 bg-contain bg-no-repeat bg-center"
-              >
-                {/* Logo Samsung */}
-              </div>
+              <img src={samsung} alt="Samsung Logo" className="h-28 w-auto object-contain" />
             </div>
             <div className="flex justify-center items-center h-28">
-              <div
-                style={{ backgroundImage: `url(${poco})` }}
-                className="w-28 h-28 bg-contain bg-no-repeat bg-center"
-              >
-                {/* Logo Poco */}
-              </div>
+              <img src={poco} alt="Poco Logo" className="h-28 w-auto object-contain" />
             </div>
             <div className="flex justify-center items-center h-28">
-              <div
-                style={{ backgroundImage: `url(${motorola})` }}
-                className="w-28 h-28 bg-contain bg-no-repeat bg-center"
-              >
-                {/* Logo Motorola */}
-              </div>
+              <img src={motorola} alt="Motorola Logo" className="h-32 w-auto object-contain" />
             </div>
           </Slider>
         </div>
