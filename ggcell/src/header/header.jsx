@@ -22,11 +22,11 @@ function Header() {
 
   return (
     <>
-      <header className="fixed w-full font-sans flex flex-col sm:flex-row justify-between items-center text-white p-5 z-50 bg-transparent">
+      <header  className=" font-bold fixed w-full font-sans flex flex-col sm:flex-row justify-between items-center text-white p-5 z-50 bg-transparent">
         <div className="flex justify-between items-center w-full">
           <a href="#" className="bg-cover bg-center sm:m-auto w-20 h-14" style={{ backgroundImage: `url(${logoImage})` }} />
           <button
-            className={`p-3 bg-green-500 hover:bg-green-800 font-serif text-white rounded-full  ${showButton ? 'block' : 'hidden'} sm:hidden ${menuOpen ? 'hidden' : 'block'}`}
+            className={`p-3 bg-green-500 hover:bg-green-800  text-white rounded-full  ${showButton ? 'block' : 'hidden'} sm:hidden ${menuOpen ? 'hidden' : 'block'}`}
           >
             Fale Com o Vendedor
           </button>
@@ -62,7 +62,7 @@ function Header() {
           </ul>
         </nav>
         <div className={`w-full flex justify-center`}>
-          <button className='p-3 bg-green-500 hover:bg-green-800 font-serif hidden sm:block text-white rounded-full'>
+          <button className='p-3 bg-green-500 hover:bg-green-800 hidden sm:block text-white rounded-full'>
             Fale Com o Vendedor
           </button>
         </div>

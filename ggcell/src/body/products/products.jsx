@@ -52,22 +52,22 @@ function Products() {
         <div className="container mx-auto">
           <Slider {...settings}>
             <div className="flex justify-center items-center h-32">
-              <img src={xiaomi} alt="Xiaomi Logo" className="h-28 w-auto object-contain" />
+              <img src={xiaomi} alt="Xiaomi Logo" className=" duration-300 transform hover:scale-105 h-28 w-auto object-contain" />
             </div>
             <div className="flex justify-center items-center h-28">
-              <img src={apple} alt="Apple Logo" className="h-28 w-auto object-contain" />
+              <img src={apple} alt="Apple Logo" className="duration-300 transform hover:scale-105 h-28 w-auto object-contain" />
             </div>
             <div className=" flex justify-center items-center h-28">
-              <img src={samsung} alt="Samsung Logo" className=" h-32 w-auto object-contain" />
+              <img src={samsung} alt="Samsung Logo" className="duration-300 transform  hover:scale-105 h-32 w-auto object-contain" />
             </div>
             <div className="flex justify-center items-center h-28">
-              <img src={jbl} alt="JBL Logo" className="h-32 w-auto object-contain" />
+              <img src={jbl} alt="JBL Logo" className="duration-300 transform hover:scale-105 h-32 w-auto object-contain" />
             </div>
             <div className="flex justify-center items-center h-28">
-              <img src={poco} alt="Poco Logo" className="h-32 w-auto object-contain" />
+              <img src={poco} alt="Poco Logo" className="duration-300 transform hover:scale-105 h-32 w-auto object-contain" />
             </div>
             <div className="flex justify-center items-center h-28">
-              <img src={motorola} alt="Motorola Logo" className="h-32 w-auto object-contain" />
+              <img src={motorola} alt="Motorola Logo" className="duration-300 transform hover:scale-105 h-32 w-auto object-contain" />
             </div>
           </Slider>
         </div>

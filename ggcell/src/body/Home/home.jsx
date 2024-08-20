@@ -5,7 +5,7 @@ function Home() {
     return (
         <>
             <div
-                className="  relative h-screen w-auto flex flex-col items-center bg-cover bg-center bg-blend-overlay justify-center mx-auto text-center"
+                className="   relative h-screen w-auto flex flex-col items-center bg-cover bg-center bg-blend-overlay justify-center mx-auto text-center"
                 style={{
                     backgroundImage: `url(${bgHome}), radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 80%)`,
                 }}
@@ -17,13 +17,13 @@ function Home() {
                         className="w-80 h-80 bg-no-repeat bg-contain bg-center mx-auto"
                         style={{ backgroundImage: `url(${logoImage})` }}
                     />
-                    <p className='text-white p-2 text-3xl'> Celulares e Acessórios para Todos os Estilos.</p>
+                    <p className=' font-bold text-gray-200 p-2 text-3xl'> Celulares e Acessórios para Todos os Estilos.</p>
                     <h1 className="mt-4 text-white p-2 text-xl">
-                        Frete Grátis Goiânia e Região
+                        Frete Grátis Goiânia
                     </h1>
                     <a href="">
                         <button
-                            className='p-4 bg-green-500 hover:bg-green-800 font-serif font-bold text-white rounded-full'
+                            className='p-4 bg-green-500 hover:bg-green-800 font-bold text-white rounded-full'
                         >
                             Fale Com o vendedor
                         </button>
