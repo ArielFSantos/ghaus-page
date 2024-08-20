@@ -1,7 +1,5 @@
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-import React from 'react';
 import Slider from 'react-slick';
 
 
@@ -25,7 +23,7 @@ function Products() {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1400,
     responsive: [
       {
         breakpoint: 1024,

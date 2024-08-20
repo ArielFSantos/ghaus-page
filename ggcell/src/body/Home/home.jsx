@@ -14,16 +14,17 @@ function Home() {
 
                 <div className="relative z-10">
                     <div
-                        className="w-80 h-80 bg-no-repeat bg-contain bg-center mx-auto"
+                        className="w-80 h-52 bg-no-repeat bg-cover bg-top mx-auto"
                         style={{ backgroundImage: `url(${logoImage})` }}
                     />
-                    <p className=' font-bold text-gray-200 p-2 text-3xl'> Celulares e Acessórios para Todos os Estilos.</p>
-                    <h1 className="mt-4 text-white p-2 text-xl">
-                        Frete Grátis Goiânia
+                    <p className=' font-bold text-gray-200 p-2 text-3sm sm:text-3xl'> Celulares e Acessórios para Todos os Estilos.</p>
+                    <h1 className=" text-white p-2 text-xl">
+                         10x <strong>Sem juros</strong> ou <strong>Desconto</strong> á Vista
                     </h1>
+                    <h2 className=' text-white  '><strong>Frete Gratis</strong> Goiania</h2>
                     <a href="">
                         <button
-                            className='p-4 bg-green-500 hover:bg-green-800 font-bold text-white rounded-full'
+                            className='p-4 mt-1 bg-green-500 hover:bg-green-800 font-bold text-white rounded-full'
                         >
                             Fale Com o vendedor
                         </button>
