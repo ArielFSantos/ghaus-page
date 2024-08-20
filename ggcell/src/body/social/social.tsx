@@ -1,12 +1,12 @@
 import React from "react";
 
-// Importe suas imagens com o caminho correto
-import img1 from '../../assets/image-social/image1.jpg'; // Substitua pela extensão correta se necessário
-import img2 from '../../assets/image-social/image2.jpg';
-import img3 from '../../assets/image-social/image3.jpg';
-import img4 from '../../assets/image-social/image4.jpg';
-import img5 from '../../assets/image-social/image5.jpg';
-import img6 from '../../assets/image-social/image6.jpg';
+// Importe suas imagens PNG com o caminho correto
+import img1 from '../../assets/image-social/image1.png'; // Verifique a extensão e o caminho
+import img2 from '../../assets/image-social/image2.png';
+import img3 from '../../assets/image-social/image3.png';
+import img4 from '../../assets/image-social/image4.png';
+import img5 from '../../assets/image-social/image5.png';
+import img6 from '../../assets/image-social/image6.png';
 
 function Social() {
   return (
