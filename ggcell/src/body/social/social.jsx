@@ -1,4 +1,4 @@
-import React from 'react';
+// Importação das imagens
 import img1 from '../../assets/image-social/image1.png';
 import img2 from '../../assets/image-social/image2.png';
 import img3 from '../../assets/image-social/image3.png';
@@ -10,40 +10,46 @@ import img8 from '../../assets/image-social/image8.png';
 import img9 from '../../assets/image-social/image9.png';
 import img10 from '../../assets/image-social/image10.png';
 
+// Array de imagens
+const images = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+];
+
+// Componente para imagem
+const ImageItem = ({ src, alt }) => (
+  <div className="break-inside-avoid">
+    <img
+      src={src}
+      alt={alt}
+      className="w-40 sm:w-52 h-auto p-0 object-cover transition-transform duration-300 transform hover:scale-105"
+    />
+  </div>
+);
+
 function Social() {
   return (
-    <div className="h-screen w-full">
-      <h1 className="text-center text-5xl font-bold text-gray-500 pt-8 pb-10">Masonry Layout</h1>
-      <div className=" flex flex-wrap sm:columns-5 gap-3 w-[1200px] mx-auto space-y-3 pb-28">
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img1} alt="Descrição da imagem 1" className="w-full h-auto" />
-        </div>
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img2} alt="Descrição da imagem 2" className="w-full h-auto" />
-        </div>
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img3} alt="Descrição da imagem 3" className="w-full h-auto" />
-        </div>
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img4} alt="Descrição da imagem 4" className="w-full h-auto" />
-        </div>
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img5} alt="Descrição da imagem 5" className="w-full h-auto" />
-        </div>
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img6} alt="Descrição da imagem 6" className="w-full h-auto" />
-        </div>
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img7} alt="Descrição da imagem 6" className="w-full h-auto" />
-        </div>
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img8} alt="Descrição da imagem 6" className="w-full h-auto" />
-        </div>
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img9} alt="Descrição da imagem 6" className="w-full h-auto" />
-        </div>
-        <div className="bg-gray-200 break-inside-avoid">
-          <img src={img10} alt="Descrição da imagem 6" className="w-full h-auto" />
+    <div className="min-h-screen bg-neutral-900 border-0">
+      <div className="container mx-auto py-8 px-4">
+        <h1 className="text-center pt-20 text-3xl sm:text-5xl font-bold text-gray-200 mb-10">
+          Comentarios
+        </h1>
+        <div className="flex flex-wrap justify-center gap-3 lg:px-36 overflow-hidden">
+          {images.map((img, index) => (
+            <ImageItem
+              key={index}
+              src={img}
+              alt={`Descrição da imagem ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
     </div>
