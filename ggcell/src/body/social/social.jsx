@@ -42,7 +42,7 @@ function Social() {
         <h1 className="text-center pt-20 text-3xl sm:text-5xl font-bold text-gray-200 mb-10">
           Comentarios
         </h1>
-        <div className="flex flex-wrap justify-center gap-3 lg:px-36 overflow-hidden">
+        <div className="flex flex-wrap justify-center gap-3 lg:px-36">
           {images.map((img, index) => (
             <ImageItem
               key={index}
