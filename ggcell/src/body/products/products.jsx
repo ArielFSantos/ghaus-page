@@ -15,6 +15,7 @@ import smartwatch from '../../assets/image/smartwatch.png';
 import peliculas from '../../assets/image/peliculas.png';
 
 
+
 function Products() {
   const settings = {
     dots: false,
