@@ -3,7 +3,7 @@ import bgHome from '../../assets/image/bgHome.jpg';
 
 function Home() {
     return (
-        <>
+
             <div
                 className="   relative h-screen w-auto flex flex-col items-center bg-cover bg-center bg-blend-overlay justify-center mx-auto text-center"
                 style={{
@@ -17,11 +17,11 @@ function Home() {
                         className="w-80 h-52 bg-no-repeat bg-cover bg-top mx-auto"
                         style={{ backgroundImage: `url(${logoImage})` }}
                     />
-                    <p className=' font-bold text-gray-200 p-2 text-3sm sm:text-3xl'> Celulares e Acessórios para Todos os Estilos.</p>
+                    <p className=' font-bold text-gray-200 p-2 text-2xl sm:text-3xl'> Celulares e Acessórios para Todos os Estilos.</p>
                     <h1 className=" text-white p-2 text-xl">
                          10x <strong>Sem juros</strong> ou <strong>Desconto</strong> á Vista
                     </h1>
-                    <h2 className=' text-white  '><strong>Frete Gratis</strong> Goiania</h2>
+                    <h2 className='text-white '><strong>Frete Gratis</strong> Goiânia</h2>
                     <a href="">
                         <button
                             className='p-4 mt-1 bg-green-500 hover:bg-green-800 font-bold text-white rounded-full'
@@ -31,7 +31,7 @@ function Home() {
                     </a>
                 </div>
             </div>
-        </>
+
     );
 }
 

@@ -21,7 +21,7 @@ function Header() {
   }, []);
 
   return (
-    <>
+
       <header  className=" font-bold fixed w-full font-sans flex flex-col md:flex-row justify-between items-center text-white p-5 z-50 bg-transparent">
         <div className="flex justify-between items-center w-full">
           <a href="#" className="bg-cover bg-top md:m-auto w-20 h-14" style={{ backgroundImage: `url(${logoImage})` }} />
@@ -67,7 +67,7 @@ function Header() {
           </button>
         </div>
       </header>
-    </>
+  
   );
 }
 

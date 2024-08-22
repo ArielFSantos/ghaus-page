@@ -3,6 +3,7 @@ import Footer from "./footer/footer";
 import Home from "./body/Home/home";
 import Products from "./body/products/products";
 import Social from "./body/social/social";
+import Contact from "./body/contact/contact";
 
 
 function App() {
@@ -12,9 +13,8 @@ function App() {
       <Home/>
       <Products/>
       <Social/>
-      <Footer/>
-       
-      
+      <Contact/>
+      <Footer/> 
     </>
   );
 }
