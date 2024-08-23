@@ -3,7 +3,6 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    
   ],
   theme: {
     extend: {
@@ -12,7 +11,10 @@ export default {
         heading: ['Bebas Neue', 'serif'],
         menu: ['Poppins', 'sans-serif'],
       },
+      // Adicione outras personalizações, se necessário
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'), // Adiciona o plugin tailwind-scrollbar
+  ],
 }
