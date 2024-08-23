@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <>
-      <header className="bg-gradient-to-br from-white/10 via-white/0 to-white/0 backdrop-blur-lg font-bold fixed w-full font-sans flex flex-col md:flex-row justify-between items-center text-white p-2 z-50 bg-transparent">
+      <header className=" font-menu bg-gradient-to-br from-white/10 via-white/0 to-white/0 backdrop-blur-lg font-bold fixed w-full flex flex-col md:flex-row justify-between items-center text-white p-2 z-50 bg-transparent">
         <div className="flex justify-between items-center w-full">
           <Link
             to="home"

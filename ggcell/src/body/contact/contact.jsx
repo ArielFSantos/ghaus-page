@@ -22,13 +22,13 @@ function Contact() {
   return (
     <div className="min-h-screen bg-neutral-900 flex flex-col items-center justify-center py-10">
       <h1
-        className="font-bold text-gray-200 text-center text-3xl sm:text-5xl mb-10"
+        className=" font-heading font-bold text-gray-200 text-center text-3xl sm:text-5xl mb-10"
         data-aos="fade-down" // Animação AOS
       >
         Siga nosso Instagram
       </h1>
       <section
-        className="w-full max-w-6xl flex justify-center bg-neutral-200 rounded-lg shadow-lg p-6"
+        className="w-full max-w-6xl flex justify-center bg-neutral-300  rounded-lg shadow-lg p-6"
         data-aos="fade-up" // Animação AOS
       >
         <blockquote

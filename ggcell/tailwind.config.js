@@ -6,7 +6,13 @@ export default {
     
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Open Sans', 'sans-serif'],
+        heading: ['Bebas Neue', 'serif'],
+        menu: ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

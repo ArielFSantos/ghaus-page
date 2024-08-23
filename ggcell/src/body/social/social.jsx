@@ -50,7 +50,7 @@ function Social() {
   return (
     <div className="min-h-screen bg-neutral-900 border-0">
       <div className="container mx-auto py-8 px-4">
-        <h1 className="text-center pt-20 text-3xl sm:text-5xl font-bold text-gray-200 mb-10" data-aos="fade-down">
+        <h1 className="text-center  font-heading pt-20 text-3xl sm:text-5xl font-bold text-gray-200 mb-10" data-aos="fade-down">
           Comentarios
         </h1>
         <div className="flex flex-wrap justify-center gap-3 lg:px-36">

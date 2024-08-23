@@ -5,7 +5,8 @@ import Slider from 'react-slick';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa o CSS para as animações
 
-import xiaomi from '../../assets/image/XiaomiLogo.png';
+import xiaomi from '../../assets/image/XiaomiLogo.png'
+import boombox from '../../assets/image/boombox.png';
 import apple from '../../assets/image/Apple.png';
 import jbl from '../../assets/image/JBL.png';
 import samsung from '../../assets/image/samsung.webp';
@@ -14,7 +15,7 @@ import motorola from '../../assets/image/motorola.png';
 import headphone from '../../assets/image/headphone.png';
 import smartphone from '../../assets/image/smartphone.png';
 import smartwatch from '../../assets/image/smartwatch.png';
-import peliculas from '../../assets/image/peliculas.png';
+
 
 function Products() {
   useEffect(() => {
@@ -49,7 +50,7 @@ function Products() {
   };
 
   return (
-    <section className="bg-neutral-900 h-auto sm:h-screen w-full mx-auto overflow-hidden">
+    <section className="bg-neutral-900 h-auto sm:min-h-screen sm:auto w-full mx-auto overflow-hidden">
       <div className="h-10 sm:h-20"></div>
       {/* Logo de Marcas */}
       <div
@@ -80,7 +81,7 @@ function Products() {
         </div>
       </div>
       <h1
-        className='font-bold text-gray-200 mx-auto text-center text-3xl sm:text-5xl p-10'
+        className='font-bold font-heading text-gray-200 mx-auto text-center text-3xl sm:text-5xl p-10'
         data-aos="fade-down" // Animação AOS
       >
         Produtos
@@ -92,7 +93,7 @@ function Products() {
           { src: smartphone, title: 'Celulares' },
           { src: headphone, title: 'Fones de Ouvido' },
           { src: smartwatch, title: 'Relógios' },
-          { src: peliculas, title: 'Películas' },
+          { src: boombox, title: 'Som Bluetooth' },
         ].map((item, index) => (
           <div
             key={index}
