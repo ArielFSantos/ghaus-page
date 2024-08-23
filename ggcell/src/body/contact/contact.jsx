@@ -32,7 +32,7 @@ function Contact() {
         data-aos="fade-up" // Animação AOS
       >
         <blockquote
-          className="instagram-media w-full max-w-[500px]"
+          className="instagram-media w-full max-w-[600px]"
           data-instgrm-captioned
           data-instgrm-permalink="https://www.instagram.com/reel/C9x43_ePisZ/?utm_source=ig_embed&amp;utm_campaign=loading"
           data-instgrm-version="14"

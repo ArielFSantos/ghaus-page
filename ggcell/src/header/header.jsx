@@ -79,7 +79,7 @@ function Header() {
                 duration={500}
                 className="text-white no-underline p-4 transition-colors duration-300 ease-in-out group-hover:text-[#cf945b] cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#cf945b]"
               >
-                Contato
+                Instagram
               </Link>
             </li>
           </ul>
