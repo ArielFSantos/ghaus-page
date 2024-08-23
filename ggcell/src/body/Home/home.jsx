@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Importa o CSS para as animações
 import logoImage from '../../assets/image/GG.png';
 import bgHome from '../../assets/image/bgHome.jpg';
+import whatsappIcon from '../../assets/image/whatsapp-icon.webp'; // Importe o ícone do WhatsApp
 
 function Home() {
   useEffect(() => {
@@ -42,11 +43,13 @@ function Home() {
           <strong>Frete Grátis</strong> Goiânia
         </h2>
 
-        {/* Botão */}
-        <a href="#" data-aos="zoom-in">
-          <button className="p-4 mt-4 bg-green-500 hover:bg-green-700 font-bold text-white rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105">
-            Fale Com o Vendedor
-          </button>
+        {/* Link com a imagem do WhatsApp */}
+        <a href="https://wa.me/556281974464" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+          <img
+            src={whatsappIcon}
+            alt="Fale com o Vendedor"
+            className="w-32 h-32 sm:hidden cursor-pointer mx-auto hover:scale-125 transition-transform duration-300"
+          />
         </a>
       </div>
     </div>
