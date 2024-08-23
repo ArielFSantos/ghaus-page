@@ -17,7 +17,7 @@ function Home() {
                         className="w-80 h-52 bg-no-repeat bg-cover bg-top mx-auto"
                         style={{ backgroundImage: `url(${logoImage})` }}
                     />
-                    <p className=' font-bold text-gray-200 p-2 text-2xl sm:text-3xl'> Celulares e Acessórios para Todos os Estilos.</p>
+                    <p className=' font-bold text-gray-200 p-2 text-2xl sm:text-3xl'> Celulares e Acessórios para Todos os Estilos</p>
                     <h1 className=" text-white p-2 text-xl">
                          10x <strong>Sem juros</strong> ou <strong>Desconto</strong> á Vista
                     </h1>
