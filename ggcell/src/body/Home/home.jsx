@@ -19,6 +19,7 @@ function Home() {
       style={{
         backgroundImage: `url(${bgHome}), radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 80%)`,
       }}
+      data-aos="zoom-out"
     >
       {/* Overlay para escurecer o fundo */}
       <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
@@ -27,19 +28,19 @@ function Home() {
       <div className="relative z-10 px-4 sm:px-8 md:px-12 lg:px-16">
         {/* Logo */}
         <div
-          className="w-80 h-52 bg-no-repeat bg-cover mx-auto"
+          className="w-80 h-52 sm:w-7/12 sm:h-96 bg-no-repeat bg-cover mx-auto"
           style={{ backgroundImage: `url(${logoImage})` }}
           data-aos="fade-down"
         />
 
         {/* Texto e informações */}
-        <p className="font-bold text-gray-200 p-2 text-2xl sm:text-3xl mt-4" data-aos="fade-left">
+        <p className="font-bold text-gray-200  text-1xl sm:p-5 sm:text-5xl mt-4" data-aos="fade-left">
           Celulares e Acessórios para Todos os Estilos
         </p>
-        <h1 className="text-white p-2 text-xl sm:text-2xl font-semibold" data-aos="fade-right">
+        <h1 className="text-white  text-1xl sm:text-4xl font-semibold" data-aos="fade-right">
           10x <strong>Sem juros</strong> ou <strong>Desconto</strong> à Vista
         </h1>
-        <h2 className="text-white text-lg font-medium mt-2" data-aos="fade-up">
+        <h2 className="text-white text-1xl sm:text-3xl font-medium mt-2" data-aos="fade-up">
           <strong>Frete Grátis</strong> Goiânia
         </h2>
 

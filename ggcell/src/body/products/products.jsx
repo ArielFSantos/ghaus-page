@@ -54,7 +54,7 @@ function Products() {
       {/* Logo de Marcas */}
       <div
         className="h-26 sm:h-32 my-10 w-full bg-gradient-to-b from-neutral-700 to-neutral-800"
-        data-aos="fade-down" // Animação AOS
+        data-aos="fade-top" // Animação AOS
       >
         <div className="container mx-auto">
           <Slider {...settings}>
@@ -86,7 +86,8 @@ function Products() {
         Produtos
       </h1>
       {/* Card de Produtos */}
-      <div className="mx-auto flex flex-wrap justify-center gap-6">
+      <div className="mx-auto flex flex-wrap justify-center gap-6"
+      data-aos="zoom-in" >
         {[
           { src: smartphone, title: 'Celulares' },
           { src: headphone, title: 'Fones de Ouvido' },
@@ -95,13 +96,8 @@ function Products() {
         ].map((item, index) => (
           <div
             key={index}
-            className="relative max-w-xs overflow-hidden rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105"
-            style={{
-              background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))',
-              backdropFilter: 'blur(10px)',
-              WebkitBackdropFilter: 'blur(10px)',
-            }}
-            data-aos="fade-left" // Animação AOS
+            className=" 'gradient-diagonal': 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))', relative max-w-xs overflow-hidden rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105"
+            data-aos="fade-up" // Animação AOS
           >
             <img className="p-4 w-80 h-80 object-contain" src={item.src} alt={`${item.title} image`} />
             <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-transparent rounded-2xl"></div>
