@@ -36,6 +36,8 @@ function Contact() {
           data-instgrm-captioned
           data-instgrm-permalink="https://www.instagram.com/reel/C9x43_ePisZ/?utm_source=ig_embed&amp;utm_campaign=loading"
           data-instgrm-version="14"
+          data-aos="fade-down"
+           
         >
           <div className="p-4">
             <a

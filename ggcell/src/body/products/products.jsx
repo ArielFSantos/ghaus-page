@@ -55,7 +55,7 @@ function Products() {
       {/* Logo de Marcas */}
       <div
         className="h-26 sm:h-32 my-10 w-full bg-gradient-to-b from-neutral-700 to-neutral-800"
-        data-aos="fade-top" // Animação AOS
+        data-aos="fade-up" // Animação AOS
       >
         <div className="container mx-auto">
           <Slider {...settings}>
