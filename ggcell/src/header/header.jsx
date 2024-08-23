@@ -26,21 +26,16 @@ function Header() {
         <div className="flex justify-between items-center w-full">
           <a href="#" className="bg-cover bg-top md:m-auto w-20 h-14" style={{ backgroundImage: `url(${logoImage})` }} />
           <button
-            className={`p-3 bg-green-500 hover:bg-green-800  text-white rounded-full  ${showButton ? 'block' : 'hidden'} sm:hidden ${menuOpen ? 'hidden' : 'block'}`}
-          >
-            Fale Com o Vendedor
-          </button>
-          <button
             className="text-white text-3xl px-5 md:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
-        <nav className={`flex flex-col md:flex-row items-center justify-between w-full ${menuOpen ? 'block' : 'hidden'} md:block`}>
-          <ul className="list-none flex flex-col md:flex-row items-center justify-center w-full md:w-auto">
+        <nav  className={` sm:bg-none bg-gradient-to-br from-white/10 via-white/0 to-white/0 backdrop-blur-lg flex flex-col md:flex-row items-center justify-between w-full ${menuOpen ? 'block' : 'hidden'} md:block`}>
+          <ul className=" list-none flex flex-col md:flex-row items-center justify-center w-full md:w-auto">
             <li className="relative group">
-              <a href="/" className="text-white whitespace-nowrap no-underline p-4 transition-colors duration-300 ease-in-out group-hover:text-[#cf945b]">
+              <a href="/" className=  " text-white whitespace-nowrap no-underline p-4 transition-colors duration-300 ease-in-out group-hover:text-[#cf945b]">
                 Tela Inicial
               </a>
             </li>
