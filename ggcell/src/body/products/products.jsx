@@ -97,7 +97,7 @@ function Products() {
         ].map((item, index) => (
           <div
             key={index}
-            className=" 'gradient-diagonal': 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))', relative max-w-xs overflow-hidden rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-105"
+            className=" 'gradient-diagonal': 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))', relative max-w-xs overflow-hidden rounded-2xl shadow-lg transition-transform duration-300 transform hover:scale-110"
             data-aos="fade-up" // Animação AOS
           >
             <img className="p-4 w-80 h-80 object-contain" src={item.src} alt={`${item.title} image`} />

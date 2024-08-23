@@ -12,23 +12,30 @@ function Contact() {
     // Carrega o script do Instagram após o componente ser montado
     const script = document.createElement("script");
     script.async = true;
-    script.src = "//www.instagram.com/embed.js";
+    script.src = "https://www.instagram.com/embed.js"; // Usando o protocolo https
     script.onload = () => {
-      window.instgrm.Embeds.process(); // Processa os embeds após o script carregar
+      if (window.instgrm && window.instgrm.Embeds) {
+        window.instgrm.Embeds.process(); // Processa os embeds após o script carregar
+      }
     };
     document.body.appendChild(script);
+
+    // Limpeza: remove o script ao desmontar o componente
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
     <div className="min-h-screen bg-neutral-900 flex flex-col items-center justify-center py-10">
       <h1
-        className=" font-heading font-bold text-gray-200 text-center text-3xl sm:text-5xl mb-10"
+        className="font-heading font-bold text-gray-200 text-center text-3xl sm:text-5xl mb-10"
         data-aos="fade-down" // Animação AOS
       >
         Siga nosso Instagram
       </h1>
       <section
-        className="w-full max-w-6xl flex justify-center bg-neutral-300  rounded-lg shadow-lg p-6"
+        className="w-full max-w-6xl flex justify-center bg-neutral-300 rounded-lg shadow-lg p-6"
         data-aos="fade-up" // Animação AOS
       >
         <blockquote
@@ -37,7 +44,6 @@ function Contact() {
           data-instgrm-permalink="https://www.instagram.com/reel/C9x43_ePisZ/?utm_source=ig_embed&amp;utm_campaign=loading"
           data-instgrm-version="14"
           data-aos="fade-down"
-           
         >
           <div className="p-4">
             <a
