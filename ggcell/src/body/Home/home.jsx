@@ -28,13 +28,13 @@ function Home() {
       <div className="relative z-10 px-4 sm:px-8 md:px-12 lg:px-16">
         {/* Logo */}
         <div
-          className="w-80 h-52  bg-no-repeat bg-cover mx-auto"
+          className=" w-40 h-28 mt-12 sm:mt-0 sm:w-80 sm:h-52  bg-no-repeat bg-cover mx-auto"
           style={{ backgroundImage: `url(${logoImage})` }}
           data-aos="fade-down"
         />
 
         {/* Texto e informações */}
-        <p className="font-bold font-heading text-gray-200  text-4xl sm:p-5 sm:text-5xl mt-4" data-aos="fade-left">
+        <p className="font-bold font-heading text-gray-200  text-3xl sm:p-5 sm:text-5xl mt-4" data-aos="fade-left">
           Celulares e Acessórios para Todos os Estilos
         </p>
         <h1 className="text-white font-sans text-1xl sm:text-4xl font-semibold" data-aos="fade-right">
