@@ -1,6 +1,9 @@
+import { useEffect } from "react";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importa o CSS para as animações
 
 import xiaomi from '../../assets/image/XiaomiLogo.png';
 import apple from '../../assets/image/Apple.png';
@@ -14,6 +17,13 @@ import smartwatch from '../../assets/image/smartwatch.png';
 import peliculas from '../../assets/image/peliculas.png';
 
 function Products() {
+  useEffect(() => {
+    // Inicializa o AOS após o componente ser montado
+    AOS.init({
+      duration: 1000, // Duração da animação em milissegundos
+    });
+  }, []);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -42,7 +52,10 @@ function Products() {
     <section className="bg-neutral-900 h-auto sm:h-screen w-full mx-auto overflow-hidden">
       <div className="h-10 sm:h-20"></div>
       {/* Logo de Marcas */}
-      <div className="h-26 sm:h-32 my-10 w-full bg-gradient-to-b from-neutral-700 to-neutral-800">
+      <div
+        className="h-26 sm:h-32 my-10 w-full bg-gradient-to-b from-neutral-700 to-neutral-800"
+        data-aos="fade-down" // Animação AOS
+      >
         <div className="container mx-auto">
           <Slider {...settings}>
             <div className="flex justify-center items-center h-32">
@@ -66,7 +79,12 @@ function Products() {
           </Slider>
         </div>
       </div>
-      <h1 className='font-bold text-gray-200 mx-auto text-center text-3xl sm:text-5xl p-10'>Produtos</h1>
+      <h1
+        className='font-bold text-gray-200 mx-auto text-center text-3xl sm:text-5xl p-10'
+        data-aos="fade-down" // Animação AOS
+      >
+        Produtos
+      </h1>
       {/* Card de Produtos */}
       <div className="mx-auto flex flex-wrap justify-center gap-6">
         {[
@@ -83,6 +101,7 @@ function Products() {
               backdropFilter: 'blur(10px)',
               WebkitBackdropFilter: 'blur(10px)',
             }}
+            data-aos="fade-left" // Animação AOS
           >
             <img className="p-4 w-80 h-80 object-contain" src={item.src} alt={`${item.title} image`} />
             <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-transparent rounded-2xl"></div>
